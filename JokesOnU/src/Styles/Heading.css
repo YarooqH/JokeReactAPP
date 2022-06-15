@@ -1,0 +1,15 @@
+.heading {
+    padding-top: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    /* height: 10vh; */
+}
+
+h3{
+    color: aliceblue;
+}
+
+.refresh-btn:hover {
+    transform: rotateZ(360deg);
+    transition: transform 0.5s;
+}
