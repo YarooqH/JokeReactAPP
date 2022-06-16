@@ -7,31 +7,20 @@ import Heading from './Components/Heading';
 import Joke from './Components/Joke.jsx';
 
 function App() {
-  // const [joke, setJoke] = useState();
   let [setup, setSetup] = useState();
   let [punchline, setPunchline] = useState();
-  // let joke = getJokeFromAPI();
-  // let btn = document.querySelector('.btn');
-  // btn.addEventListener('click', getJokeFromAPI);
+
 
   let getJokeFromAPI = () => {
-    let data = fetch("http://localhost:3005/jokes/random")
+    // let data = fetch("http://localhost:3005/jokes/random")
+    let data = fetch("https://yq-joke-api.herokuapp.com/random_joke")
     .then(response => response.json())
     .then(data => {
       console.log(data.setup + " -> " + data.punchline)
       console.log(data)
-      // console.log(data.punchline)
-      // setJoke(data)
       setSetup(data.setup);
       setPunchline(data.punchline);
-      // return setJoke(data.joke);
-      // if (a == 'joke') {
-      //   return data.joke
-      // } else if (a == 'punchline') {
-      //   return data.punchline
-      // }
     }
-    // return newJoke;
   )}
 
   useEffect(() => {
@@ -43,7 +32,6 @@ function App() {
       <div onClick={() => {window.location.reload();}}>
         <Heading />  
       </div>
-      {/* <button className='btn'>click me</button>     */}
       <Joke setup={setup} punchline={punchline}/>
     </div>
   )

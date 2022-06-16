@@ -1,13 +1,5 @@
 import React from 'react'
 
-import TopLeft from '../Assets/top-left-pebble.svg';
-import TopRight from '../Assets/top-right-pebble.svg';
-import BottomLeft from '../Assets/bottom-left-pebble.svg';
-import BottomRight from '../Assets/bottom-right-pebble.svg';
-import CenterPeblle from '../Assets/center-pebble.svg';
-
-import Main from '../Assets/Da0ting.svg';
-import Ellipse from '../Assets/Ellipse 1.svg';
 
 import '../Styles/Pebble.css';
 
@@ -26,11 +18,9 @@ function Pebble(props) {
     // , 5000);
   }
 
-  // circle.classList.add('animate-circle');
 
 
   return (
-    // <div className='container'>
       <div className="subcontainer">
        <svg onClick={animate} id='circle' width="1158" height="579" viewBox="0 0 1158 579" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="579" cy="579" r="579" fill="white"/>
@@ -38,7 +28,6 @@ function Pebble(props) {
         </svg>
         <h2>{punchline}</h2>
       </div>
-    // </div>
   )
 }
 
