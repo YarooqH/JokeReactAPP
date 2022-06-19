@@ -14,4 +14,5 @@ https://github.com/15Dkatz/official_joke_api
 ### Screenshots
 
 ![Start State](./src/Assets/ss-init.png)
+
 ![Final State](./src/Assets/ss-final.png)
