@@ -1,5 +1,4 @@
-import Reaxt, { useState, useEffect } from 'react';
-import { Center, Square, Circle } from '@chakra-ui/react';
+import React, { useState, useEffect } from 'react';
 import './Styles/App.css';
 
 
@@ -37,13 +36,4 @@ function App() {
   )
 }
 
-export default App
-
-
-
-
-
-// useEffect(() => {
-//   getJokeFromAPI();
-// }, []);
-
+export default App;

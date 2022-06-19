@@ -11,11 +11,6 @@ function Pebble(props) {
  
   const animate = () => {
     circle.classList.add('animate-circle');
-    // setInterval(() => {
-    //   circle.classList.remove('animate-circle');
-    //   // circle.classList.add('animate-circle-back');
-    // }
-    // , 5000);
   }
 
 
