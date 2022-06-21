@@ -11,7 +11,6 @@ function App() {
 
 
   let getJokeFromAPI = () => {
-    // let data = fetch("http://localhost:3005/jokes/random")
     let data = fetch("https://yq-joke-api.herokuapp.com/random_joke")
     .then(response => response.json())
     .then(data => {
