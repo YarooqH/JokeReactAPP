@@ -4,7 +4,7 @@ import '../Styles/Heading.css';
 
 import Refresh from '../Assets/new-joke.png';
 
-let Heading = () => {
+const Heading = () => {
   return (
     <div>
       <Flex float="right" className="heading">
@@ -14,7 +14,7 @@ let Heading = () => {
         </VStack>
       </Flex>
     </div>
-  );
+  )
 }
 
 export default Heading;

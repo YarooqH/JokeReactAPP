@@ -23,10 +23,10 @@ svg {
 }
 
 @keyframes animatecircle {
-    0% {
+    from {
         transform: translateX(0px);
     }
-    100% {
+    to {
         transform: translateX(1000px);
     }
 }

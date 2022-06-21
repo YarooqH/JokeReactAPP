@@ -7,7 +7,6 @@ function Joke(props) {
     let jokeSetup = props.setup;
     let jokePunchline = props.punchline;
 
-
     return (
         <div>
             <h1> {jokeSetup} </h1>
